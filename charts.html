@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>康复评估</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+		
+
+		
+	<div class="col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1 main">			
+		<div class="row">
+			
+		</div><!--/.row-->
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">历史数据</h1>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">步行速度（m/s)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart1" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--/.row-->
+		
+		
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">左右脚平均步长(cm)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart2" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">髋关节屈曲活动度(°)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart3" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-6">
+				<div class="panel panel-default">
+					<div class="panel-heading">髋关节伸展活动度(°)</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart4" height="200" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</div>
+			
+		
+		<div class="row">
+			
+		</div><!--/.row-->
+		
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header">特征评估模型</h1>
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+		
+			<div class="panel panel-default chat">
+				<div class="panel-heading" id="accordion">康复评估模型准确率</div>
+				
+				
+						
+							
+							<div class="chat-body clearfix">
+								<div class="header">
+									<img src="1.png" height="480px"/>
+								</p>
+							</div>
+						
+					
+				</div>
+				
+				
+			</div>
+			
+		</div><!--/.col-->
+
+		<div class="col-md-6">
+		
+			<div class="panel panel-default chat">
+				<div class="panel-heading" id="accordion">训练过程中LOSS随迭代次数的变化</div>
+	
+				
+						
+							
+							<div class="chat-body clearfix">
+								<div class="header">
+									<img src="2.png"/>
+								</p>
+							</div>
+						
+					
+				</div>
+				
+				
+			</div>
+			
+		</div><!--/.col-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">康复程度改善情况</h1>
+			</div>
+		</div><!--/.row-->
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>步行速度</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="93" ><span class="percent">92%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>左右脚平均步长</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="63" ><span class="percent">63%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>髋关节屈曲活动度</h4>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="40" ><span class="percent">40%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>髋关节伸展活动度</h4>
+						<div class="easypiechart" id="easypiechart-red" data-percent="23" ><span class="percent">23%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--/.row-->
+		
+		</div><!--/.row-->
+		<div class="row">
+			<div class="col-lg-12 col-md-4">
+				<div class="panel panel-default">
+					<div class="panel-heading">康复评分</div>
+					<div class="panel-body">
+						<div class="canvas-wrapper">
+							<canvas class="main-chart" id="line-chart6" height="100" width="600"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		
+		</div>
+											
+	<div class="row">
+		<div class="col-md-5">
+		
+			<div class="panel panel-default chat">
+				<div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-comment"></span> 康复评估结果</div>
+				<div class="panel-body">
+					<ul>
+						
+							
+							<div class="chat-body clearfix">
+								<div class="header">
+									<strong class="primary-font">综合评分：85分</strong> <small class="text-muted">2020-03-12</small>
+								</div>
+								<p><br>
+									步行速度相比历史数据有较大提升。<br><br>
+									左右脚平均步长相比历史数据有较大提升。<br><br>
+									髋关节屈曲活动度相比历史数据有较大提升。<br><br>
+									髋关节伸展活动度相比历史数据有提升。<br><br>
+									膝关节伸展屈曲活动度相比历史数据无明显变化。<br><br>
+									<strong class="primary-font">康复建议:</strong>患者需要加强髋关节伸展运动，重点加强膝关节伸展屈曲活动。<br><br> 
+								</p>
+							</div>
+						</li>
+						
+					</ul>
+				</div>
+				
+				
+			</div>
+			
+		</div><!--/.col-->
+	  
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
